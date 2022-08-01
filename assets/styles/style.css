@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo:wght@400;500;600;800&display=swap");
+
+body {
+  font-family: Archivo;
+  background-color: #ffebc9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.logo h1 {
+  color: #753422;
+  font-weight: 700;
+  font-size: 3.5vh;
+}
+
+.bar {
+  display: flex;
+  text-align: right;
+  height: 100px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: #d79771;
+}
+
+nav a {
+  text-decoration: none;
+  color: #753422;
+  font-size: 18px;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #753422;
+}
+
+ul {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+#beranda {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 200px;
+  color: #753422;
+}
+
+#beranda p {
+  font-weight: 500;
+}
+
+main {
+  padding: 20;
+  overflow: auto;
+}
+
+#fasilitas h2 {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 10px;
+  transition: 0.8s;
+  text-align: center;
+}
+
+.col-fas {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.desc1 {
+  text-align: center;
+}
+
+.col-rev {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+footer {
+  padding: 20px;
+  color: #753422;
+  background-color: #d79771;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
