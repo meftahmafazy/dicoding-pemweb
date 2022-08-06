@@ -9,7 +9,7 @@ body {
 }
 
 .logo h1 {
-  color: #753422;
+  color: #d79771;
   font-weight: 700;
   font-size: 3.5vh;
 }
@@ -37,18 +37,18 @@ nav {
   position: sticky;
   width: 100%;
   top: 0;
-  background-color: #d79771;
+  background-color: #753422;
 }
 
 nav a {
   text-decoration: none;
-  color: #753422;
+  color: #d79771;
   font-size: 18px;
 }
 
 nav a:hover {
   font-weight: bold;
-  color: #753422;
+  color: #d79771;
 }
 
 .navigation {
@@ -153,10 +153,49 @@ main {
   margin-bottom: 80px;
 }
 
-footer {
+.biodata {
   padding: 20px;
   color: #753422;
   background-color: #d79771;
+}
+
+.biodata h2 {
+  padding-top: 20px;
+}
+
+.biodata header {
+  text-align: center;
+}
+
+.imgku {
+  display: flex;
+  padding: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 40%;
+}
+
+.bio {
+  display: flex;
+}
+
+.icon-bio {
+  padding: 10px;
+  margin: 20px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-bio img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: #d79771;
+  background-color: #753422;
   text-align: center;
   font-weight: bold;
   font-size: 15px;
