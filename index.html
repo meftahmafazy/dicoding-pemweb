@@ -21,6 +21,11 @@
               <li><a href="#about">Tentang Kami</a></li>
             </ul>
           </div>
+          <div class="button-mobile" onclick="button(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </nav>
     </header>
@@ -35,7 +40,7 @@
             <a href="#daftar" class="reservasi">Reservasi Sekarang</a>
           </div>
           <div class="img">
-            <img src="assets/images/kost.png" alt="Al-Hakim" height="360px" />
+            <img src="assets/images/kost.png" alt="Al-Hakim" class="kost" />
           </div>
         </article>
 
@@ -122,15 +127,22 @@
                 <h2>Profilku</h2>
               </div>
             </header>
+
             <div class="aku">
               <div>
                 <img src="assets/images/meftah.png" alt="" width="200px" class="imgku" />
               </div>
               <div class="bio">
                 <div class="icon-bio">
-                  <img src="assets/images/user.png" alt="" />
-                  <img src="assets/images/loc.png" alt="" />
-                  <img src="assets/images/cp.png" alt="" />
+                  <img src="assets/images/user.png" alt="" class="icon" />
+                  <img src="assets/images/loc.png" alt="" class="icon" />
+                  <img src="assets/images/cp.png" alt="" class="icon" />
+                </div>
+
+                <div class="nama">
+                  <p>Muhammad Meftah Mafazy</p>
+                  <p>Banjarbaru, Kalimantan Selatan, Indonesia</p>
+                  <p><a href="mailto:meftah.mafazy@gmail.com">meftah.mafazy@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -141,5 +153,6 @@
     <footer>
       <p>Copyright &copy; 2022, Kost Al-Hakim</p>
     </footer>
+    <script src="assets/script.js"></script>
   </body>
 </html>
