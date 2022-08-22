@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  display: inline;
+}
+
 .logo h1 {
   color: #d79771;
   font-weight: 700;
@@ -46,7 +50,7 @@ nav {
   margin-left: auto;
   justify-content: space-between;
   padding: 15px;
-  padding-right: 45px;
+  padding-right: 145px;
   list-style-type: none;
   background-color: #753422;
 }
@@ -98,7 +102,7 @@ nav {
   height: auto;
   padding-left: 150px;
   padding-right: 200px;
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 300px;
   color: #753422;
 }
@@ -138,7 +142,7 @@ main {
   height: auto;
   padding-left: 200px;
   padding-right: 200px;
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 300px;
   color: #753422;
 }
@@ -172,7 +176,7 @@ main {
   height: auto;
   padding-left: 200px;
   padding-right: 200px;
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 300px;
   color: #753422;
 }
@@ -228,7 +232,7 @@ main {
 
 .nama {
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
   margin-left: 5px;
   width: 100%;
   float: right;
@@ -237,7 +241,7 @@ main {
 }
 
 .nama p {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .nama p a {
@@ -260,27 +264,35 @@ footer {
   .logo h1 {
     color: #d79771;
     font-weight: 700;
-    font-size: 20px;
-    padding: 1rem;
+    font-size: 150%;
+    padding-left: 1rem;
+  }
+
+  .button-mobile {
+    display: flex;
   }
 
   #beranda {
     display: inline-block;
     padding: 10%;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding-top: 35%;
+    margin-top: 50%;
+    margin-bottom: 30px;
   }
+
   .intro h1 {
     font-size: 120%;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
   }
+
   .intro p {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
   }
+
   .kost {
     display: none;
     margin-top: 15px;
@@ -291,7 +303,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5%;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     text-align: center;
     margin-bottom: 105%;
   }
@@ -299,7 +311,7 @@ footer {
   #fasilitas {
     width: auto;
     height: auto;
-    padding-left: 3vh;
+    padding-left: 3%;
     padding-top: 50px;
     padding-bottom: 300px;
     color: #753422;
@@ -308,13 +320,14 @@ footer {
 
   #fasilitas h2 {
     text-align: center;
-    padding-left: 130px;
+    padding-left: 115px;
   }
 
   .col-fas {
     display: inline-block;
-    padding-left: 20%;
-    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17.5%;
   }
 
   #about {
@@ -371,5 +384,166 @@ footer {
     width: 100rem;
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 890px) {
+  .logo h1 {
+    color: #d79771;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    padding-top: 0rem;
+    width: 100%;
+  }
+
+  /* nav {
+    position: sticky;
+    width: 95rem;
+    top: 0;
+  }
+
+  .bar {
+    display: flex;
+    height: 100px;
+    margin: 0px;
+    background-color: #753422;
+  } */
+
+  #sidebar {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 62.5%;
+    padding-top: 1.6rem;
+    /* list-style-type: none;
+    background-color: #753422; */
+  }
+
+  #sidebar li a {
+    font-size: 125%;
+  }
+  #beranda {
+    display: inline-block;
+    justify-content: center;
+    padding: 0%;
+    padding-top: 15%;
+  }
+
+  .intro h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    font-size: 175%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 2.5%;
+    padding-left: 4.5%;
+  }
+
+  .intro p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 180%;
+    padding-top: 2.5%;
+    padding-bottom: 5px;
+  }
+
+  .kost {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-left: 10%;
+    padding-bottom: 45%;
+  }
+
+  .reservasi {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+    margin-left: 35%;
+    font-size: 150%;
+  }
+
+  #fasilitas {
+    width: auto;
+    height: auto;
+    padding-left: 3%;
+    padding-top: 15%;
+    color: #753422;
+    align-items: center;
+  }
+
+  #fasilitas h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding-left: 30%;
+  }
+
+  .col-fas {
+    display: grid;
+    grid-template-columns: 75% 75%;
+    align-items: center;
+    padding: 9%;
+    font-size: 150%;
+  }
+
+  #about {
+    width: auto;
+    height: auto;
+    padding: 10%;
+    padding-top: 15%;
+  }
+
+  .desc1 {
+    text-align: center;
+  }
+
+  .desc1 h2 {
+    font-size: 2.5rem;
+  }
+
+  .desc1 p {
+    font-weight: 500;
+    font-size: 180%;
+  }
+
+  .col-rev {
+    display: inline-block;
+    margin-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 175%;
+  }
+
+  .card {
+    margin: 5%;
+    padding: 12.5%;
+  }
+
+  .nama {
+    width: 100%;
+    font-size: 140%;
+    font-weight: 500;
+  }
+
+  .icon-bio {
+    display: inline-block;
+    padding-top: 10.5%;
+    line-height: 50%;
+    margin-left: 1rem;
+    width: 15%;
+  }
+
+  .imgku {
+    width: 25%;
+    display: flex;
+    margin-right: 10%;
   }
 }
