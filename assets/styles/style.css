@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -12,10 +12,10 @@ body {
   font-family: "Quicksand", sans-serif;
   background-color: #ffebc9;
   background-size: 100% 30%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: top;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -27,15 +27,20 @@ header {
 .logo h1 {
   color: #d79771;
   font-weight: 700;
-  font-size: 3.5vh;
+  font-size: 2rem;
   padding: 10px;
-  padding-left: 150px;
+  padding-left: 200px;
+  margin-top: 20px;
 }
 
 nav {
   position: sticky;
-  width: 95rem;
+  width: 100%;
   top: 0;
+}
+
+.nav-scroll {
+  background-color: #753422;
 }
 
 .bar {
@@ -49,20 +54,19 @@ nav {
   display: flex;
   margin-left: auto;
   justify-content: space-between;
-  padding: 15px;
-  padding-right: 145px;
+  padding: 25px;
   list-style-type: none;
+  margin-right: 170px;
   background-color: #753422;
 }
 
 #sidebar a {
   top: 0;
-  padding: 14px 16px;
-  height: 100%;
+  padding: 10px;
   font-weight: 600;
   text-decoration: none;
   color: #d79771;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #sidebar a:hover {
@@ -98,13 +102,16 @@ nav {
 
 #beranda {
   display: flex;
+  justify-content: center;
   width: auto;
   height: auto;
-  padding-left: 150px;
-  padding-right: 200px;
-  padding-top: 120px;
-  padding-bottom: 300px;
+  padding: 250px 195px;
   color: #753422;
+}
+
+#beranda h1 {
+  font-weight: 700;
+  font-size: 30px;
 }
 
 #beranda p {
@@ -112,20 +119,15 @@ nav {
   font-size: 20px;
 }
 
-.intro a {
-  margin-right: 35px;
-}
-
 .reservasi {
   color: #753422;
   font-weight: 600;
   text-decoration: none;
   box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   border: 10px;
   padding: 10px;
-  margin-top: 15px;
-  margin-right: 5px;
+  padding-top: 10px;
 }
 
 .reservasi:hover {
@@ -133,17 +135,14 @@ nav {
 }
 
 main {
-  padding: 20;
   overflow: auto;
 }
 
 #fasilitas {
+  display: inline;
   width: auto;
   height: auto;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 120px;
-  padding-bottom: 300px;
+  padding: 90px 120px;
   color: #753422;
 }
 
@@ -154,11 +153,12 @@ main {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: 5px;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 5px;
+  margin-top: 10px;
   margin: 10px;
   transition: 0.8s;
   text-align: center;
+  align-items: center;
 }
 
 .card img {
@@ -167,17 +167,15 @@ main {
 
 .col-fas {
   display: flex;
-  margin-bottom: 80px;
+  margin: 20px;
+  margin-bottom: 0px;
   font: 1.5em;
 }
 
 #about {
   width: auto;
   height: auto;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 120px;
-  padding-bottom: 300px;
+  padding: 170px 200px;
   color: #753422;
 }
 
@@ -187,17 +185,20 @@ main {
 
 .col-rev {
   display: flex;
-  margin-bottom: 80px;
+  justify-content: center;
+  font: 1.5em;
 }
 
-.biodata {
-  padding: 20px;
+article.biodata {
   color: #753422;
+  display: block;
   background-color: #d79771;
+  width: auto;
+  padding: 15px;
 }
 
 .biodata h2 {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .biodata header {
@@ -205,22 +206,23 @@ main {
 }
 
 .imgku {
-  display: flex;
-  padding: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
-  border-radius: 40%;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 50px;
+  border-radius: 75%;
   float: right;
 }
 
 .bio {
   display: flex;
+  flex-direction: row;
+  padding: 5px;
 }
 
 .icon-bio {
   padding: 10px;
   margin: 20px;
-  margin-left: 40px;
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -256,294 +258,96 @@ footer {
   background-color: #753422;
   text-align: center;
   font-weight: bold;
-  font-size: 15px;
-}
-
-/* Smartphone */
-@media screen and (max-width: 450px) {
-  .logo h1 {
-    color: #d79771;
-    font-weight: 700;
-    font-size: 150%;
-    padding-left: 1rem;
-  }
-
-  .button-mobile {
-    display: flex;
-  }
-
-  #beranda {
-    display: inline-block;
-    padding: 10%;
-    padding-top: 35%;
-    margin-top: 50%;
-    margin-bottom: 30px;
-  }
-
-  .intro h1 {
-    font-size: 120%;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-
-  .intro p {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-
-  .kost {
-    display: none;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-
-  .reservasi {
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-    margin-left: 1rem;
-    text-align: center;
-    margin-bottom: 105%;
-  }
-
-  #fasilitas {
-    width: auto;
-    height: auto;
-    padding-left: 3%;
-    padding-top: 50px;
-    padding-bottom: 300px;
-    color: #753422;
-    align-items: center;
-  }
-
-  #fasilitas h2 {
-    text-align: center;
-    padding-left: 115px;
-  }
-
-  .col-fas {
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17.5%;
-  }
-
-  #about {
-    width: auto;
-    height: auto;
-    padding: 10%;
-  }
-
-  .desc1 {
-    text-align: center;
-  }
-
-  .desc1 h2 {
-    font-size: 1.3rem;
-  }
-
-  .desc1 p {
-    font-weight: 500;
-  }
-
-  .col-rev {
-    display: inline-block;
-    margin-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  .card {
-    margin: 10%;
-  }
-
-  .imgku {
-    width: 55%;
-    display: flex;
-    justify-content: center;
-    margin: 16%;
-    margin-top: 0.5rem;
-  }
-
-  .icon-bio {
-    display: inline-block;
-    padding-top: 15rem;
-    margin-top: 3.5rem;
-    line-height: 50%;
-    margin-left: 0rem;
-    width: 15%;
-  }
-
-  .nama {
-    padding: 50%;
-    padding-top: 50px;
-    margin-top: 15.5rem;
-    margin-left: 1rem;
-    width: 100rem;
-    font-size: 16px;
-    font-weight: 500;
-  }
+  font-size: 18px;
+  width: 100%;
+  display: block;
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 890px) {
+@media screen and (max-width: 1000px) {
   .logo h1 {
-    color: #d79771;
-    font-weight: 700;
-    font-size: 2.5rem;
-    padding-left: 1rem;
-    padding-top: 0rem;
-    width: 100%;
+    padding-left: 50px;
   }
-
-  /* nav {
-    position: sticky;
-    width: 95rem;
-    top: 0;
-  }
-
-  .bar {
-    display: flex;
-    height: 100px;
-    margin: 0px;
-    background-color: #753422;
-  } */
 
   #sidebar {
-    display: flex;
-    margin-left: auto;
-    justify-content: space-between;
-    padding: 10px;
-    padding-right: 62.5%;
-    padding-top: 1.6rem;
-    /* list-style-type: none;
-    background-color: #753422; */
+    margin-right: 10%;
   }
 
-  #sidebar li a {
-    font-size: 125%;
-  }
   #beranda {
-    display: inline-block;
-    justify-content: center;
-    padding: 0%;
-    padding-top: 15%;
+    padding-top: 20%;
   }
 
-  .intro h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    font-size: 175%;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 2.5%;
-    padding-left: 4.5%;
+  #about {
+    padding-top: 10%;
   }
+}
 
-  .intro p {
-    text-align: center;
-    font-weight: 500;
-    font-size: 180%;
-    padding-top: 2.5%;
-    padding-bottom: 5px;
-  }
-
-  .kost {
-    width: 80%;
-    height: 80%;
-    display: inline-block;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-left: 10%;
-    padding-bottom: 45%;
-  }
-
-  .reservasi {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-bottom: 10%;
-    margin-left: 35%;
-    font-size: 150%;
+@media screen and (max-width: 800px) {
+  #sidebar {
+    margin-right: 5%;
   }
 
   #fasilitas {
-    width: auto;
-    height: auto;
-    padding-left: 3%;
-    padding-top: 15%;
-    color: #753422;
-    align-items: center;
-  }
-
-  #fasilitas h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    padding-left: 30%;
+    padding-top: 10%;
   }
 
   .col-fas {
     display: grid;
-    grid-template-columns: 75% 75%;
-    align-items: center;
-    padding: 9%;
-    font-size: 150%;
   }
 
   #about {
-    width: auto;
-    height: auto;
-    padding: 10%;
     padding-top: 15%;
   }
+}
 
-  .desc1 {
+@media screen and (max-width: 768px) {
+  .button-mobile {
+    display: flex;
+    margin-top: 36px;
+    margin-right: 20px;
+  }
+  .navigation ul {
+    position: fixed;
+    flex-direction: column;
+    left: -500px;
+    top: 15%;
+    margin-top: auto;
+    padding-left: 0;
+    width: 36%;
+    height: 85%;
+    transition: 0.7s;
     text-align: center;
   }
 
-  .desc1 h2 {
-    font-size: 2.5rem;
+  .navigation ul a {
+    height: 90%;
   }
-
-  .desc1 p {
-    font-weight: 500;
-    font-size: 180%;
-  }
-
-  .col-rev {
-    display: inline-block;
-    margin-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 175%;
-  }
-
-  .card {
-    margin: 5%;
-    padding: 12.5%;
-  }
-
-  .nama {
-    width: 100%;
-    font-size: 140%;
-    font-weight: 500;
-  }
-
-  .icon-bio {
-    display: inline-block;
-    padding-top: 10.5%;
-    line-height: 50%;
-    margin-left: 1rem;
-    width: 15%;
-  }
-
-  .imgku {
-    width: 25%;
+  .bar a {
     display: flex;
-    margin-right: 10%;
+    justify-content: center;
+  }
+  .navigation ul.active {
+    left: 0;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 576px) {
+  .logo h1 {
+    font-size: 18px;
+    padding-top: 18px;
+    display: flex;
+    padding-left: 10px;
+  }
+
+  .kost {
+    display: none;
+  }
+
+  .intro {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: auto;
   }
 }
